@@ -8,9 +8,23 @@
     --gray-5: #ced4da;
     --gray-6: #edf2ff;
     --gray-7: #f8f9fa;
+
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+}
+
+.section__banner__content,
+.section__about__content,
+.section__faq__content,
+.section__comment__content {
+    max-width: 1256px;
+    margin: 0 auto;
 }

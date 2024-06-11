@@ -1,0 +1,36 @@
+@import url(./globalStyles.css);
+
+.header__container {
+    border-bottom: solid .2rem var(--brand-1);
+    padding: 2rem 23.6rem;
+    background-color: var(--gray-1);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.header--image {
+    width: 20rem;
+    height: 2.8rem;
+}
+
+.header__button {
+    border: solid .1rem var(--gray-7);
+    padding: 2rem 3.2rem;
+    background-color: transparent;
+    color: var(--gray-7);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.header__button:hover {
+    background-color: var(--brand-2);
+    border-color: var(--brand-2);
+}

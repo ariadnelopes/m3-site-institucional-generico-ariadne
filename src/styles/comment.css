@@ -1,0 +1,78 @@
+.section__comment__container{
+    background-color: var(--gray-2);
+    padding: 8.2rem 23.6rem;
+}
+
+.section__comment__content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.section__comment__content--right{
+    padding-left: 8.64rem;
+    width: 40%;
+}
+
+.section__comment__title__container--right{
+    background-color: var(--brand-1);
+    padding: 8rem 5.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.section__comment__title--right{
+    color: var(--gray-7);
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+.section__comment__paragraph--right{
+    color: var(--gray-7);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.section__comment__container--left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8.2rem;
+}
+
+.section__comment__content--left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__comment__title__container--left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.section__comment__title--left-name{
+    color: var(--gray-6);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.section__comment__paragraph--left-year{
+    color: var(--gray-4);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.section__comment__paragraph--left{
+    color: var(--gray-5);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: justify;
+    width: 65%;
+    line-height: 2.7rem;
+}
+

@@ -1,0 +1,43 @@
+.section__banner__container {
+    background-color: var(--gray-2);
+    padding: 25rem 23.6rem;
+}
+
+.section__banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+    align-items: center;
+}
+
+.banner__title {
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: var(--gray-6);
+    text-align: center;
+    line-height: 7.28rem;
+}
+
+.highlight {
+    color: var(--brand-1)
+}
+
+.banner__paragraph {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--gray-4);
+    width: 65%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.section__banner__button {
+    padding: 2rem 3.2rem;
+    border: solid 1px var(--brand-1);
+    background-color: var(--brand-1);
+    cursor: pointer;
+    transition: ease-out .3s;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--gray-7)
+}

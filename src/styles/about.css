@@ -1,0 +1,25 @@
+.section__about__container{
+    padding: 8.2rem 23.6rem;
+    background-color: var(--gray-1);
+}
+
+.section__about__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.section__about__title {
+    width: 50%;
+    color: var(--gray-6);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.section__about__paragraph{
+    width: 50%;
+    font-size: 2rem;
+    color: var(--gray-5);
+    font-weight: 400;
+    text-align: justify;
+    line-height: 3rem;
+}
