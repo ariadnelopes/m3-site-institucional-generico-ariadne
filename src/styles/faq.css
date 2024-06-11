@@ -17,6 +17,9 @@
     flex-direction: column;
     gap: 3.3rem;
     padding-right: 8.7rem;
+    position: sticky;
+    top: 16rem;
+    left: 0rem;
 }
 
 .section__faq__title{
@@ -71,6 +74,6 @@
     font-size: 2rem;
     font-weight: 400;
     text-align: justify;
-    line-height: 3rem;
+    line-height: 3rem; 
 }
 

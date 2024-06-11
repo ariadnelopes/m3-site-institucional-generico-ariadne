@@ -4,6 +4,10 @@
     border-bottom: solid .2rem var(--brand-1);
     padding: 2rem 23.6rem;
     background-color: var(--gray-1);
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .header__content {
