@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/index.js" defer></script>
     <title>Página Institucional Genérica</title>
   </head>
   <body>
@@ -196,6 +197,16 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog></dialog>
+    <dialog class="modal__container">
+      <form class="modal__content" method="dialog">
+        <div class="modal__title__container"> 
+          <h1 class="modal__title">Cadastro</h1>
+          <button class="modal--close closemodal">X</button>
+        </div>
+        <p class="modal__paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil hic at, saepe molestiae praesentium libero quisquam beatae delectus exercitationem consectetur adipisci, corrupti placeat, corporis expedita. Eligendi facilis mollitia laudantium id?</p>
+        <input class="modal__input" type="email" placeholder="Digitar email"> 
+        <button class="modal--submit closemodal" type="submit">Entrar na lista para a próxima turma</button>
+      </form>
+    </dialog>
   </body>
 </html>
