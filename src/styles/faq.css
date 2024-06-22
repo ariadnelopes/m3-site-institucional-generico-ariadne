@@ -1,6 +1,7 @@
 .section__faq__container {
     background-color: var(--gray-2);
-    padding: 8.2rem 23.6rem;
+    padding-block: clamp(6rem, 3.48rem + 2.458vw, 8.2rem);
+    padding-inline: clamp(9rem, -7.721rem + 16.313vw, 23.6rem);
 }
 
 .section__faq__content {
@@ -24,7 +25,7 @@
 
 .section__faq__title{
     color:var(--gray-6);
-    font-size: 4rem;
+    font-size: clamp(3.6rem, 3.142rem + 0.447vw, 4rem);
     font-weight: 600;
 }
 
@@ -63,7 +64,7 @@
 
 .section__faq__title--right{
     color: var(--gray-6);
-    font-size: 3.2rem;
+    font-size: clamp(2.8rem, 2.342rem + 0.447vw, 3.2rem);
     font-weight: 600;
     text-align: center;
     margin-bottom: 5rem;
@@ -77,3 +78,87 @@
     line-height: 3rem; 
 }
 
+@media(max-width:1024px){
+    .section__faq__container {
+        padding-inline:clamp(7rem, 0.969rem + 7.843vw, 9rem);
+    }
+    .section__faq__title{
+        font-size: clamp(2.4rem, -1.219rem + 4.706vw, 3.6rem);
+    }
+    .section__faq__paragraph{
+        font-size: clamp(1.5rem, 0.997rem + 0.784vw, 1.7rem);
+        line-height: 2.5rem;
+    }
+    .section__faq__button{
+        padding-block: clamp(1.5rem, -0.008rem + 1.961vw, 2rem);
+        padding-inline:clamp(2.7rem, 1.192rem + 1.961vw, 3.2rem);
+        font-size: clamp(1.2rem, 0.295rem + 1.176vw, 1.5rem);
+    }
+    .section__faq__title--right{
+        font-size: clamp(2.1rem, -0.011rem + 2.745vw, 2.8rem);
+    }
+    .section__faq__paragraph--right{
+        font-size: clamp(1.6rem, 0.997rem + 0.784vw, 1.8rem);
+    }
+}
+
+@media(max-width:768px){
+    .section__faq__container {
+        padding-inline:clamp(2rem, 0.754rem + 2.924vw, 3rem);
+    }
+    .section__faq__content{
+        flex-direction: column;
+        gap:5.5rem;
+    }
+    .section__faq__content--left, .section__faq__container--right{
+        width: 100%;
+    }
+    .section__faq__title__container{
+        padding-right: 0;
+        align-items: center;
+    }
+    .section__faq__title{
+        font-size: clamp(3.2rem, 2.702rem + 1.17vw, 3.6rem);
+    }
+    .section__faq__paragraph{
+        font-size: clamp(1.6rem, 1.102rem + 1.17vw, 2rem);
+        line-height: 2.5rem;
+    }
+    .section__faq__button{
+        padding-block:clamp(1.4rem, 0.902rem + 1.17vw, 1.8rem);
+        padding-inline:clamp(2.2rem, 1.702rem + 1.17vw, 2.6rem);
+        font-size: clamp(1.6rem, 1.351rem + 0.585vw, 1.8rem);
+        width: 100%;
+    }
+    .section__faq__title--right{
+        font-size: clamp(2.6rem, 1.853rem + 1.754vw, 3.2rem);
+    }
+    .section__faq__paragraph--right{
+        font-size: clamp(1.6rem, 1.102rem + 1.17vw, 2rem);
+        line-height: 2.7rem;
+    }
+}
+
+@media(max-width:425px){
+    .section__faq__container {
+        padding-inline:clamp(2rem, 0.069rem + 6.897vw, 3rem);
+    }
+    .section__faq__title{
+        font-size: clamp(2.8rem, 2.028rem + 2.759vw, 3.2rem);
+    }
+    .section__faq__paragraph{
+        font-size: clamp(1.6rem, 0.828rem + 2.759vw, 2rem);
+        line-height: 3rem;
+    }
+    .section__faq__button{
+        padding-block:clamp(1.4rem, 0.628rem + 2.759vw, 1.8rem);
+        font-size: clamp(1.6rem, 1.214rem + 1.379vw, 1.8rem);
+    }
+    .section__faq__title--right{
+        font-size: 2.4rem;
+    }
+    .section__faq__paragraph--right{
+        font-size: clamp(1.6rem, 0.828rem + 2.759vw, 2rem);
+        line-height: 3rem;
+    }
+}

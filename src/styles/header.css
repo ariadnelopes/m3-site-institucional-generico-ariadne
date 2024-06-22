@@ -2,7 +2,8 @@
 
 .header__container {
     border-bottom: solid .2rem var(--brand-1);
-    padding: 2rem 23.6rem;
+    padding-block: clamp(1.8rem, 1.571rem + 0.358vw, 2rem);
+    padding-inline: clamp(9rem, -7.721rem + 16.313vw, 23.6rem);
     background-color: var(--gray-1);
     position: sticky;
     left: 0;
@@ -28,7 +29,7 @@
     padding: 2rem 3.2rem;
     background-color: transparent;
     color: var(--gray-7);
-    font-size: 1.6rem;
+    font-size: clamp(1.5rem, 1.385rem + 0.179vw, 1.6rem);
     font-weight: 600;
     cursor: pointer;
     transition: background .3s;
@@ -38,3 +39,28 @@
     background-color: var(--brand-2);
     border-color: var(--brand-2);
 }
+
+@media (max-width: 1024px) {
+    .header__container{
+        padding-inline: clamp(3rem, -0.016rem + 6.275vw, 4rem);
+    }
+}
+
+@media(max-width:768px) {
+    .header__container{
+        padding-inline: clamp(2.5rem, 1.88rem + 2.332vw, 3rem);
+    }
+    .header__content{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .header__container{
+        border-bottom: solid .3rem var(--brand-1);
+    }
+    .header__button{
+        display: none;
+    }
+}
+

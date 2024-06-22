@@ -1,6 +1,7 @@
 .section__comment__container{
     background-color: var(--gray-2);
-    padding: 8.2rem 23.6rem;
+    padding-block: clamp(6rem, 3.48rem + 2.458vw, 8.2rem);
+    padding-inline: clamp(9rem, -7.721rem + 16.313vw, 23.6rem);
 }
 
 .section__comment__content{
@@ -16,7 +17,8 @@
 
 .section__comment__title__container--right{
     background-color: var(--brand-1);
-    padding: 8rem 5.2rem;
+    padding-inline:clamp(3rem, 0.48rem + 2.458vw, 5.2rem);
+    padding-block: clamp(5.8rem, 3.28rem + 2.458vw, 8rem);
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -27,14 +29,14 @@
 
 .section__comment__title--right{
     color: var(--gray-7);
-    font-size: 4rem;
+    font-size: clamp(3rem, 1.855rem + 1.117vw, 4rem);
     font-weight: 600;
     line-height: 6rem;
 }
 
 .section__comment__paragraph--right{
     color: var(--gray-7);
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 1.142rem + 0.447vw, 2rem);
     font-weight: 400;
     text-align: justify;
     line-height: 3rem;
@@ -50,6 +52,7 @@
 .section__comment__content--left{
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .section__comment__title__container--left{
@@ -60,22 +63,125 @@
 
 .section__comment__title--left-name{
     color: var(--gray-6);
-    font-size: 3.2rem;
+    font-size: clamp(2.4rem, 1.484rem + 0.894vw, 3.2rem);
     font-weight: 600;
 }
 
 .section__comment__paragraph--left-year{
     color: var(--gray-4);
-    font-size: 1.6rem;
+    font-size: clamp(1.3rem, 0.956rem + 0.335vw, 1.6rem);
     font-weight: 400;
 }
 
 .section__comment__paragraph--left{
     color: var(--gray-5);
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 1.371rem + 0.223vw, 1.8rem);
     font-weight: 400;
     text-align: justify;
     width: 65%;
     line-height: 2.7rem;
 }
 
+@media(max-width:1024px){
+    .section__comment__container{
+        padding-inline:clamp(7rem, 0.969rem + 7.843vw, 9rem);
+    }
+    .section__comment__content--left{
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    .section__comment__title__container--left{
+        flex-direction: row;
+        align-items: center;
+    }
+    .section__comment__title--left-name{
+        font-size: clamp(2.4rem, -0.013rem + 3.137vw, 3.2rem);
+    }
+    .section__comment__paragraph--left{
+        width: 90%;
+        font-size: clamp(1.5rem, 0.595rem + 1.176vw, 1.8rem);
+    }
+    .section__comment__paragraph--left-year{
+        font-size: clamp(1.2rem, -0.006rem + 1.569vw, 1.6rem);
+    }
+    .section__comment__title__container--right{
+        padding: 5rem 2rem;
+        gap: 2.8rem;
+    }
+    .section__comment__title--right{
+        font-size: clamp(1.9rem, -1.116rem + 3.922vw, 2.9rem);
+        line-height: 4rem;
+    }
+    .section__comment__paragraph--right{
+        font-size: clamp(1.2rem, 0.597rem + 0.784vw, 1.4rem);
+        line-height: 2.2rem;
+    }
+
+}
+
+@media(max-width:768px){
+    .section__comment__content{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .section__comment__content--right{
+        width: 100%;
+        padding-left: 0;
+    }
+    .section__comment__container{
+        padding-inline:clamp(2rem, 0.754rem + 2.924vw, 3rem);
+    }
+    .section__comment__container--left{
+        width: 100%;
+        gap: 5rem;
+    }
+    .section__comment__content--left{
+        flex-direction: column;
+        gap: 1.7rem;
+    }
+    .section__comment__title--left-name{
+        font-size: clamp(2.8rem, 2.551rem + 0.585vw, 3rem);
+    }
+    .section__comment__paragraph--left{
+        width: 100%;
+        font-size: clamp(1.6rem, 1.351rem + 0.585vw, 1.8rem);
+    }
+    .section__comment__paragraph--left-year{
+        font-size: clamp(1.4rem, 1.151rem + 0.585vw, 1.6rem);
+    }
+    .section__comment__title__container--right{
+        padding: 5rem 2.5rem;
+        gap: 2.8rem;
+    }
+    .section__comment__title--right{
+        font-size: clamp(3rem, 2.751rem + 0.585vw, 3.2rem);
+        line-height: 4rem;
+    }
+    .section__comment__paragraph--right{
+        font-size: clamp(1.7rem, 1.326rem + 0.877vw, 2rem);
+        line-height: 2.8rem;
+    }
+}
+
+@media(max-width:425px){
+    .section__comment__container{
+        padding-inline:clamp(2rem, 0.069rem + 6.897vw, 3rem);
+    }
+    .section__comment__title--left-name{
+        font-size: clamp(2.4rem, 1.628rem + 2.759vw, 2.8rem);
+    }
+    .section__comment__paragraph--left{
+        font-size: clamp(1.3rem, 0.721rem + 2.069vw, 1.6rem);
+    }
+    .section__comment__paragraph--left-year{
+        font-size: clamp(1.3rem, 0.914rem + 1.379vw, 1.5rem);
+    }
+    .section__comment__title--right{
+        font-size: clamp(2.9rem, 2.514rem + 1.379vw, 3.1rem);
+        line-height: 4rem;
+    }
+    .section__comment__paragraph--right{
+        font-size: clamp(1.6rem, 1.021rem + 2.069vw, 1.9rem);
+        line-height: 2.8rem;
+    }
+}
